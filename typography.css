@@ -1,0 +1,22 @@
+.hide {
+  display: none !important;
+}
+
+.layoutRes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.notif {
+  position: fixed;
+  bottom: 2rem;
+  right: -5rem;
+
+  @apply bg-gray-700 p-4 shadow-lg;
+  transition: all 1s ease-in;
+}
+html {
+  @apply max-[800px]:!text-[80%];
+}
